@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>This is a JavaScript file with a source map.</h1>
+
+    <!-- where to use <script src="script.js"></script> 
+      I) Before </body> (most common)
+        Why?
+          1. Page loads first
+          2. Browser does NOT block the content
+          3. Your JavaScript can access all HTML elements (because they already loaded)
+        This is the safest and cleanest method.
+      II) In the <head> with defer
+        note: defer loads the script in parallel and executes it only after the DOM is fully ready.
+        Why?
+          1. Script downloads in background
+          2. Runs ONLY after the full HTML is ready
+          3. Keeps <body> clean
+          4. This is a modern, recommended pattern
+     -->
+  </body>
+</html>
