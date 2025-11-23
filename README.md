@@ -52,9 +52,12 @@ This repository is organized into focused modules, each covering a fundamental J
 
 ### Advanced Topics
 
-| Module                                        | Description                                                                                     |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| **[memory-management/](./memory-management)** | Garbage collection, memory leaks, `WeakMap`, `WeakSet`, `WeakRef`, and performance optimization |
+| Module                                                      | Description                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[memory-management/](./memory-management)**               | Garbage collection, memory leaks, `WeakMap`, `WeakSet`, `WeakRef`, and performance optimization                                                                                                                                                                                                    |
+| **[remaining/](./remaining)**                               | Advanced JavaScript concepts including `this`, objects, prototypes, classes, destructuring, spread/rest, template literals, modules, scope, closures, hoisting, async/await, promises, regex, Map/Set, symbols, generators, dates, events, web storage, strict mode, debugging, and best practices |
+| **[Databases/](./Databases)**                               | Comprehensive guide to databases including PostgreSQL (SQL) and MongoDB (NoSQL), CRUD operations, relationships, indexing, transactions, ACID properties, connection pooling, pagination, environment variables, and testing                                                                       |
+| **[performance-optimization/](./performance-optimization)** | Web performance and React optimization covering ground rules, React.memo, useMemo, useCallback, virtualization, bundle size optimization, code splitting, lazy loading, image optimization, network performance, Web Vitals (LCP, INP, CLS), and profiling tools                                   |
 
 ## Getting Started
 
@@ -118,5 +121,69 @@ open local-storage/index.html
 
 14. `memory-management/` - Performance and optimization
 15. `typing-in-programming/` - Intro to TypeScript concepts
+16. `remaining/` - Deep dive into advanced JavaScript concepts
+17. `Databases/` - Data persistence with PostgreSQL and MongoDB
+18. `performance-optimization/` - Web performance and React optimization
 
 ---
+
+## Advanced Topics Overview
+
+### Advanced JavaScript Concepts (`remaining/`)
+
+Comprehensive coverage of:
+
+- **The `this` keyword**: Five rules, context binding, common pitfalls
+- **Objects deep dive**: Creation methods, property descriptors, getters/setters, patterns
+- **Prototypes and inheritance**: Prototype chain, constructor functions, inheritance patterns
+- **Classes**: ES6 classes, inheritance, static methods, private fields, getters/setters
+- **Destructuring**: Array and object destructuring, function parameters, patterns
+- **Spread and rest operators**: Expanding and collecting elements
+- **Template literals**: String interpolation, multi-line strings, tagged templates
+- **Modules**: ES6 modules, import/export, dynamic imports
+- **Scope, closures, and hoisting**: Variable scope, closure patterns, hoisting behavior
+- **Asynchronous JavaScript**: Callbacks, promises, async/await
+- **Regular expressions**: Pattern matching and text manipulation
+- **Map, Set, WeakMap, WeakSet**: Advanced data structures
+- **Symbols**: Unique identifiers
+- **Iterators and generators**: Custom iteration, generator functions
+- **Dates and time**: Working with dates, formatting, Intl API
+- **Events**: Event listeners, delegation, custom events
+- **Web Storage**: localStorage and sessionStorage
+- **Strict mode**: Error prevention
+- **Debugging**: Console methods, breakpoints, profiling
+- **Best practices**: Code quality, patterns, and conventions
+
+### Database Management (`Databases/`)
+
+Complete database guide covering:
+
+- **PostgreSQL (SQL)**: Relational database design, schemas, CRUD operations, relationships (one-to-many, many-to-many, one-to-one), transactions, ACID properties, using with JavaScript (pg library)
+- **MongoDB (NoSQL)**: Document-oriented storage, collections and documents, CRUD operations, embedding vs referencing, Mongoose ODM, schema validation
+- **When to use which**: Decision framework for choosing between SQL and NoSQL
+- **Database design best practices**: Normalization, indexing, connection pooling, pagination, soft deletes, environment variables, testing
+
+### Performance Optimization (`performance-optimization/`)
+
+Web performance and React optimization covering:
+
+- **Ground rules**: Measurement-first approach, essential tools (Chrome DevTools, Lighthouse, React DevTools Profiler)
+- **React performance**: React.memo, useMemo, useCallback, virtualization (windowing)
+- **Bundle size optimization**: Tree-shaking, removing unused code, production builds, bundle analysis
+- **Code splitting strategies**: Route-based, component-level, and library-level splitting
+- **Lazy loading**: Component lazy loading, image lazy loading, IntersectionObserver
+- **Image optimization**: Format selection, responsive images, compression, CDN usage
+- **Network performance**: HTTP/2+ multiplexing, caching strategies, CDN benefits
+- **Web Vitals**: LCP (Largest Contentful Paint), INP (Interaction to Next Paint), CLS (Cumulative Layout Shift)
+- **Performance profiling tools**: Chrome DevTools Performance panel, Lighthouse audits
+
+---
+
+## Additional Resources
+
+- [MDN Web Docs](https://developer.mozilla.org/) - Comprehensive JavaScript documentation
+- [JavaScript.info](https://javascript.info/) - Modern JavaScript tutorial
+- [web.dev](https://web.dev) - Google's guide to web development and performance
+- [React Documentation](https://react.dev) - Official React documentation
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/) - Official PostgreSQL documentation
+- [MongoDB Documentation](https://www.mongodb.com/docs/) - Official MongoDB documentation
